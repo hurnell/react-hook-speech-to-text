@@ -153,7 +153,7 @@ export default function useSpeechToText({
   };
 
   const startSpeechToText = async () => {
-    if (!useOnlyGoogleCloud && recognition) {
+    if (!useOnlyGoogleCloud && recognition && !isRecording) {
       chromeSpeechRecognition();
       return;
     }
