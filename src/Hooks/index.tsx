@@ -305,6 +305,7 @@ export default function useSpeechToText({
     interimResult,
     isRecording,
     results,
+    setResults,
     startSpeechToText,
     stopSpeechToText
   };

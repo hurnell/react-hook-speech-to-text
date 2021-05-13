@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { GoogleCloudRecognitionConfig } from './GoogleCloudRecognitionConfig';
 export interface SpeechRecognitionProperties {
     grammars?: SpeechGrammarList;
@@ -21,6 +22,7 @@ export default function useSpeechToText({ continuous, crossBrowser, googleApiKey
     interimResult: string | undefined;
     isRecording: boolean;
     results: string[];
+    setResults: import("react").Dispatch<import("react").SetStateAction<string[]>>;
     startSpeechToText: () => Promise<void>;
     stopSpeechToText: () => void;
 };

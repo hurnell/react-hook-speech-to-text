@@ -7,7 +7,6 @@
   "author": "Riley Brown",
   "repository": "Riley-Brown/react-speech-to-text",
   "description": "Simple cross-browser speech to text using react hooks.",
-  "dependencies": {},
   "peerDependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
