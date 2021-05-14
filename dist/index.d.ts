@@ -21,6 +21,7 @@ export default function useSpeechToText({ continuous, crossBrowser, googleApiKey
     error: string;
     interimResult: string | undefined;
     isRecording: boolean;
+    setIsRecording: import("react").Dispatch<import("react").SetStateAction<boolean>>;
     results: string[];
     setResults: import("react").Dispatch<import("react").SetStateAction<string[]>>;
     recognition: SpeechRecognition | null;
