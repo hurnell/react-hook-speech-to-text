@@ -23,6 +23,7 @@ export default function useSpeechToText({ continuous, crossBrowser, googleApiKey
     isRecording: boolean;
     results: string[];
     setResults: import("react").Dispatch<import("react").SetStateAction<string[]>>;
+    recognition: SpeechRecognition | null;
     startSpeechToText: () => Promise<void>;
     stopSpeechToText: () => void;
 };

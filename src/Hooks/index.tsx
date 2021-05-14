@@ -96,7 +96,7 @@ export default function useSpeechToText({
     if (!audioContextRef.current) {
       audioContextRef.current = new AudioContext();
     }
-  }, []);
+  }, [crossBrowser, recognition, googleApiKey, useOnlyGoogleCloud]);
 
   // Chrome Speech Recognition API:
   // Only supported on Chrome browsers
@@ -306,6 +306,7 @@ export default function useSpeechToText({
     isRecording,
     results,
     setResults,
+    recognition,
     startSpeechToText,
     stopSpeechToText
   };
